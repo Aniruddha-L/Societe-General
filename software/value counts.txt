@@ -1,0 +1,49 @@
+asset_type
+Firewall       2026 -- 0
+Server         2013 -- 2
+Router         2007 -- 1
+Switch         1992 -- 3
+Workstation    1962 -- 4
+Name: count, dtype: int64
+
+manufacturer
+IBM        2030  -- 3
+HP         2015  -- 2
+Juniper    1999  -- 4
+Cisco      1984  -- 0
+Dell       1972  -- 1 
+Name: count, dtype: int64
+
+location
+Data Center 1    2036 -- 0
+Office 1         2028 -- 2
+Data Center 2    2028 -- 1
+Remote Site      1977 -- 4
+Office 2         1931 -- 3  
+Name: count, dtype: int64
+
+department
+Finance        2099 -- 1
+Operations     2027 -- 4
+HR             1972 -- 2
+Engineering    1952 -- 0
+IT             1950 -- 3
+Name: count, dtype: int64
+
+asset_status
+In Maintenance    3378 -- 0
+Retired           3355 -- 2
+In Use            3267 -- 1
+Name: count, dtype: int64
+
+ASA Firewall             2080 -- 0
+Catalyst Switch          1997 -- 2
+EliteDesk Workstation    1989 -- 3
+Aironet Router           1971 -- 4
+PowerEdge Server         1963 -- 1
+
+Jane Smith       2038 --3
+Alice Brown      2032 --0
+Bob Johnson      2000 --1
+John Doe         1978 --4
+Charlie Davis    1952 --2
