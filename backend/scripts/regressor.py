@@ -6,6 +6,7 @@ from sklearn.feature_selection import RFE
 from datetime import datetime
 import json 
 import sys
+import argparse
 
 '''
     THIS IS THE MAIN CODE FRAME WHICH PREDICTS THE MAINTENANCE COST AND NUMBER OF DAYS LEFT FOR NEXT MAINTENANCE
@@ -29,7 +30,7 @@ import sys
 
 class ITgpt:
     def __init__(self):
-        self.data = pd.read_csv('data/ITAM dataset.csv')
+        self.data = pd.read_csv('scripts/ITAM dataset.csv')
         self.model = dtr()
         self.enc = le()
         self.rfe = RFE(self.model, n_features_to_select=5)
@@ -89,3 +90,7 @@ def main(target, dict):
         result = ai.next_maintenance(dict)
     print(result)
 
+target = sys.argv[1]
+dict = sys.argv[2]
+main(target, dict)
+# print(dict)
